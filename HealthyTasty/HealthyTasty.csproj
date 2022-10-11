@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HealthyTasty.Domain\HealthyTasty.Domain.csproj" />
+    <ProjectReference Include="..\HealthyTasty.Dto\HealthyTasty.Dto.csproj" />
+    <ProjectReference Include="..\HealthyTasty.Infrastructure\HealthyTasty.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
